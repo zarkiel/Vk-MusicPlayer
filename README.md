@@ -15,7 +15,4 @@ VK.init({
 Make sure that the current domain is in your "Domain Base" of your application.
 
 ### Demo ###
-You can see the player functionality in the next link:
-```plain
-http://zarkielnetworks.com/MusicPlayer/
-```
+You can see the player functionality in the next link: [http://zarkielnetworks.com/MusicPlayer/](http://zarkielnetworks.com/MusicPlayer/)
