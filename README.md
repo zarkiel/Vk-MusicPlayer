@@ -1,21 +1,21 @@
 Vk-MusicPlayer
 ==============
 
-Create a music player using the VK Audio API
+Crea un reproductor de música utilizando VK Audio API
 
 ### Configuration ###
-You must configure the application with your VK Application ID
+Primero debe configurar la aplicación con el ID de la aplicación registrada en VK.
 
-File: app/application.js
+File: **app/application.js**
 ```javascript
 VK.init({
-    apiId: 3953598 // set here your app id
+    apiId: 3953598 // id de la aplicación
 });
 ```
-Make sure that the current domain is in your "Domain Base" of your application.
+Asegúrese de que el dominio actual se encuentre entre los dominios permitidos por la aplicación registrada.
 
 ### Demo ###
-You can see the player functionality in the next link: [http://zarkielnetworks.com/MusicPlayer/](http://zarkielnetworks.com/MusicPlayer/)
+Puede ver la funcionalidad del reproductor en la siguiente dirección: [http://zarkielnetworks.com/MusicPlayer/](http://zarkielnetworks.com/MusicPlayer/)
 
-- You need a Vk Account for auth requests.
-- Allow popup for open the login window
+- Necesita iniciar sesión con una cuenta de Vk.
+- Si es necesario, permita las ventanas emergentes para mostrar la ventana de inicio de sesión.
