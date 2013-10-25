@@ -16,3 +16,6 @@ Make sure that the current domain is in your "Domain Base" of your application.
 
 ### Demo ###
 You can see the player functionality in the next link: [http://zarkielnetworks.com/MusicPlayer/](http://zarkielnetworks.com/MusicPlayer/)
+
+- You need a Vk Account for auth requests.
+- Allow popup for open the login window
