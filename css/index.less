@@ -1,0 +1,107 @@
+body {
+    font-family: Arial;
+    font-size: 12px;
+    
+    #playerContainer{
+        position: fixed;
+        z-index: 99999;
+        top: 0px;
+        width: 480px;
+        border: 1px solid #D9E0E7;
+        background:  #F0F1F2;
+        padding: 10px 10px;
+        
+        #playerControls{
+           text-align: left;
+        }
+        .title{
+            color: #004080;
+            margin-bottom: 10px;
+        }
+        
+        .btn{
+            position: absolute;
+            bottom: 12px;
+            
+            &#playNext{
+                right: 20px;
+            }
+            
+            &#playPrev{
+                right: 55px;
+            }
+        }
+        
+        #player{
+            margin-left: 50px;
+        }
+    }
+    
+    #wrapper{
+        width: 500px;
+        margin: 10px auto;
+        //border: 1px solid #ccc;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        display: none;
+    }
+    
+    #searchForm{
+        margin-top: 80px;
+        padding: 10px;
+        border-top: 1px solid #D9E0E7;
+        border-right: 1px solid #D9E0E7;
+        border-left: 1px solid #D9E0E7;
+    }
+
+    #playlist{
+        
+        text-align: left;
+        padding: 10px 10px;
+        border: 1px solid #D9E0E7;
+        
+        .song{
+            padding: 10px 10px;
+            cursor: pointer;
+            position: relative;
+            
+            &:hover, &.active{
+                background: #E3E9EE;
+                
+                .actions{
+                    top: 1px;
+                    right: 10px;
+                }
+            }
+            
+            a{
+                text-decoration: none;
+                color: #004080;
+                .artist{
+                    font-weight: bold;
+                }
+                
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            
+            .title{
+                width: 400px;
+                display: inline-block;
+            }
+            
+            .duration{
+                width: 25px;
+                display: inline-block;
+                font-size: 10px;
+            }
+            
+            .actions{
+                position: absolute;
+                top: -99999px;
+            }
+        }
+    }
+}

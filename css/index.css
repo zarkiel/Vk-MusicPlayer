@@ -1,0 +1,90 @@
+body {
+  font-family: Arial;
+  font-size: 12px;
+}
+body #playerContainer {
+  position: fixed;
+  z-index: 99999;
+  top: 0px;
+  width: 480px;
+  border: 1px solid #D9E0E7;
+  background: #F0F1F2;
+  padding: 10px 10px;
+}
+body #playerContainer #playerControls {
+  text-align: left;
+}
+body #playerContainer .title {
+  color: #004080;
+  margin-bottom: 10px;
+}
+body #playerContainer .btn {
+  position: absolute;
+  bottom: 12px;
+}
+body #playerContainer .btn#playNext {
+  right: 20px;
+}
+body #playerContainer .btn#playPrev {
+  right: 55px;
+}
+body #playerContainer #player {
+  margin-left: 50px;
+}
+body #wrapper {
+  width: 500px;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  display: none;
+}
+body #searchForm {
+  margin-top: 80px;
+  padding: 10px;
+  border-top: 1px solid #D9E0E7;
+  border-right: 1px solid #D9E0E7;
+  border-left: 1px solid #D9E0E7;
+}
+body #playlist {
+  text-align: left;
+  padding: 10px 10px;
+  border: 1px solid #D9E0E7;
+}
+body #playlist .song {
+  padding: 10px 10px;
+  cursor: pointer;
+  position: relative;
+}
+body #playlist .song:hover,
+body #playlist .song.active {
+  background: #E3E9EE;
+}
+body #playlist .song:hover .actions,
+body #playlist .song.active .actions {
+  top: 1px;
+  right: 10px;
+}
+body #playlist .song a {
+  text-decoration: none;
+  color: #004080;
+}
+body #playlist .song a .artist {
+  font-weight: bold;
+}
+body #playlist .song a:hover {
+  text-decoration: underline;
+}
+body #playlist .song .title {
+  width: 400px;
+  display: inline-block;
+}
+body #playlist .song .duration {
+  width: 25px;
+  display: inline-block;
+  font-size: 10px;
+}
+body #playlist .song .actions {
+  position: absolute;
+  top: -99999px;
+}
