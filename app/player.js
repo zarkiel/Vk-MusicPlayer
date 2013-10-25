@@ -9,7 +9,11 @@ var MusicPlayer = {
 	reviewLogin: function () {
 		VK.Auth.getLoginStatus(function (response) {
 			if (response.session) return $('#wrapper').show();
-			VK.Auth.login(function(){
+			VK.Auth.login(function(response){
+				if(!response.session){
+					return alert('No se ha podido iniciar la aplicación');
+				}
+				
 				window.location.reload();
 			}, 8);
 		});
